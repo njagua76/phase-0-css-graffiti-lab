@@ -1,1 +1,54 @@
 /* write your override styles here */
+/* Reset & Cleanup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+  background: #fff;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tag styling and layout fixes */
+.tag-1, #tag-2, #tag-3, #tag-4, #tag-5, #tag-6, #tag-7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 980px;
+  height: 622px;
+  display: block;
+  z-index: 7;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+tag-1 {
+  background: url(../images/tag-1.png) no-repeat center center;
+}
+
+/* Link styling */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Utility classes */
+.hidden {
+  display: none !important;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
